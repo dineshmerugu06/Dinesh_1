@@ -15,5 +15,4 @@ replaced with Merugu Dinesh Kumar's details.
 - UI, CSS, images, videos and 3D models are unchanged. The original katana
   repo was not touched. Tutorial videos and code samples still show the
   original demo content — only the site text was changed, as asked.
-- Not published on GitHub Pages yet. Asset paths still use /Dinesh_1/, so
-  they would need to be changed to /Dinesh_1/ before a Pages subpath launch.
+- Live on GitHub Pages at dineshmerugu06.github.io/Dinesh_1/ (asset paths use /Dinesh_1/).
