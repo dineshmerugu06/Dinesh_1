@@ -1,41 +1,58 @@
-# Dinesh_1-clean
+# Dinesh_1 — Merugu Dinesh Kumar
 
-Clean, simple static rewrite of the Dinesh_1 site. Plain HTML, CSS and JS only.
-No build step. Open `index.html` in a browser, or serve this folder.
+Personal website. UI unchanged from the katana mirror; only visible text was replaced with Merugu's details, and folders/files were renamed so anyone can read the repo.
 
-No Vue, no Nuxt, no Three.js, no 3D models. Each section on a page is
-independent HTML, so changing one section cannot break another.
+Live: dineshmerugu06.github.io/Dinesh_1/
+Repo: github.com/dineshmerugu06/Dinesh_1
 
-## Map
+## Pages (root)
 
-- `index.html` — Home. Sections in order:
-  Hero, Websites With Clarity Not Complications, My Strengths,
-  My Projects (summary), My Skills (summary), Who I Build For,
-  Websites Built Right, Footer / Start a Project.
-- `my-projects/index.html` — My Projects. Full list:
-  IMPERIUM, KeyMind, Auction Space, College Bus Tracking System.
-- `my-skills/index.html` — My Skills. Full skill list, Website Types,
-  My Method, Education.
-- `assets/images/merugu.jpg` — Hero photo (Merugu Dinesh Kumar).
-- `assets/images/dinesh-poster.jpg` — His own poster photo.
-- `assets/images/projects/` — His own project screenshots:
-  imperium, keymind, auction, bus-tracking, sreeka-interior.
-- `assets/images/free/` — Free stock from Pexels, no account, no payment:
-  frontend-code (Mikhail Nilov), web-design (Tranmautritam),
-  motion-3d (Jake Heinemann), backend-server (Brett Sayles),
-  database (panumas nikhomkhai), coding.mp4 video (João Adão, 9 sec).
-- `assets/css/style.css` — All styling.
-- `assets/js/main.js` — Only sets the footer year. Pages work without it.
+- `index.html` — Home
+- `my-projects.html` — My Projects page
+- `my-skills.html` — My Skills page
+- `404.html` — Fallback page for deep links (GitHub Pages serves this when a URL has no exact file)
+- `.nojekyll` — Tells GitHub Pages not to run Jekyll
 
-## Links
+## Skill pages
 
-- Navigation: Home, My Projects, My Skills. All links are relative
-  and work locally from any page in this folder.
-- Contact: GitHub dineshmerugu06, LinkedIn m-dinesh-23210b3a3,
-  email dinesh.merugu.kumar@gmail.com. No phone number is listed.
+- `my-skills/` — One folder per skill, each with its own `index.html`
+  - `frontend/` — React, Next.js, TypeScript, JavaScript, Tailwind CSS, GSAP, Lenis, Three.js, Python, Java, SQL, FastAPI, Spring Boot, Node.js, PostgreSQL, Supabase
+  - `website-types/` — Portfolio Websites, Business Websites
+  - `method/` — AI-Assisted Development
+  - `projects/` — IMPERIUM, KeyMind, Auction Space, College Bus Tracking
+- `skill-data/skills/` — Code and download file for each skill, in the same section/skill folders as above. The skill page loads its code from here.
 
-## Note on the old site
+## Code
 
-The old site was a minified Vue/Nuxt site tied to a 3D sword system.
-That system was removed in this rewrite, not patched. No old 3D,
-sword, or demo assets are used here.
+- `code/` — App code (JavaScript + CSS)
+  - `app.*.js` — App entry
+  - `home.*.js` / `home.*.css` — Home page
+  - `my-projects.*.js` / `my-projects.*.css` — My Projects page
+  - `my-skills.*.js` / `my-skills.*.css` — My Skills page
+  - `skill-detail.*.js` / `skill-detail.*.css` — Single skill page
+  - `shared.*.js`, `BaseVideo.*`, `CharAvatar.*`, `GridRow.*`, `IconList.*`, `MainFooter.*`, `SceneCanvas.*`, `page-link.*`, `storage.*` — Shared components
+  - `skills-data.*.js` — Skill list, titles, video links (Merugu's details)
+
+## Assets
+
+- `images/` — All pictures
+  - `characters/` — Dinesh / Kumar character images, footer image
+  - `home-page/` — Home section images, bamboo, storm, masonry examples
+  - `skill-demos/` — Demo images per skill, same section/skill folders as above
+  - `icons/` — Small icons
+  - `site-logo.png`, `site-mask.svg`, `site-mask-mobile.svg`, `share-screen.jpg` — Logo, masks, share image
+- `videos/` — All videos
+  - `home-container.mp4`, `home-ripple.mp4`, `slash-effect.mp4`, `my-skills-link.mp4` — Home videos
+  - `skill-demos/` — Demo video per skill, by section (file name is the skill number)
+  - `my-projects/` — My Projects presentation video
+- `3d-models/` — 3D sword models
+  - `katana.glb`, `Wakizashi.glb`, `katana-textures/`, `wakizashi-textures/`, `studio-light.exr`
+  - `draco-decoder/` — Decoder needed to open the compressed 3D models
+- `fonts/` — Site fonts
+- `favicons/` — Browser tab icons
+
+## Note
+
+Some old names still appear inside code files only (for example router name `dev-guides`, element id `skill-hub`, CSS class `skill-hub-link`). Those are internal animation/router identifiers, not folders or files. Renaming them is not needed to read the repo, and changing them can break the animations, so they were left alone.
+
+Tutorial videos and code samples on the skill pages are still the original demo content — only the site text was changed to Merugu's details. No phone number is included in the site text.
