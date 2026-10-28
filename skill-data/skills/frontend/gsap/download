@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StringTune : Tutorial : StringTune</title>
+  <title>Merugu Dinesh Kumar : Skill : StringTune</title>
   <script src="https://unpkg.com/@fiddle-digital/string-tune@1.2.1/dist/index.js"></script>
   <style>
 @property --progress {
@@ -458,39 +458,39 @@ h6, .-h6 {
   <span class="cross"></span>
   <div class="item water -l" string="cursor" string-cursor-class="-target-1" string-cursor-target-style-disable>
     <figure>
-      <img string="lazy" string-lazy="https://picsum.photos/684/565" alt="StringTune">
+      <img string="lazy" string-lazy="https://picsum.photos/684/565" alt="Merugu Dinesh Kumar">
     </figure>
     <span class="-h3">Water</span>
     <figure>
-      <img string="lazy" string-lazy="https://picsum.photos/792/592" alt="StringTune">
+      <img string="lazy" string-lazy="https://picsum.photos/792/592" alt="Merugu Dinesh Kumar">
     </figure>
   </div>
   <div class="item earth -r" string="cursor" string-cursor-class="-target-2" string-cursor-target-style-disable>
     <figure>
-      <img string="lazy" string-lazy="https://picsum.photos/431/439" alt="StringTune">
+      <img string="lazy" string-lazy="https://picsum.photos/431/439" alt="Merugu Dinesh Kumar">
     </figure>
     <span class="-h3">Earth</span>
     <figure>
-      <img string="lazy" string-lazy="https://picsum.photos/783/411" alt="StringTune">
+      <img string="lazy" string-lazy="https://picsum.photos/783/411" alt="Merugu Dinesh Kumar">
     </figure>
   </div>
   <div class="item air -l" string="cursor" string-cursor-class="-target-3" string-cursor-target-style-disable>
     <figure>
-      <img string="lazy" string-lazy="https://picsum.photos/687/544" alt="StringTune">
+      <img string="lazy" string-lazy="https://picsum.photos/687/544" alt="Merugu Dinesh Kumar">
     </figure>
     <span class="-h3">Air</span>
     <figure>
-      <img string="lazy" string-lazy="https://picsum.photos/419/506" alt="StringTune">
+      <img string="lazy" string-lazy="https://picsum.photos/419/506" alt="Merugu Dinesh Kumar">
     </figure>
   </div>
 
   <div class="item fire -r" string="cursor" string-cursor-class="-target-4" string-cursor-target-style-disable>
     <figure>
-      <img string="lazy" string-lazy="https://picsum.photos/531/404" alt="StringTune">
+      <img string="lazy" string-lazy="https://picsum.photos/531/404" alt="Merugu Dinesh Kumar">
     </figure>
     <span class="-h3">Fire</span>
     <figure>
-      <img string="lazy" string-lazy="https://picsum.photos/545/589" alt="StringTune">
+      <img string="lazy" string-lazy="https://picsum.photos/545/589" alt="Merugu Dinesh Kumar">
     </figure>
   </div>
 
@@ -499,16 +499,16 @@ h6, .-h6 {
 
   <div class="tutorial-cursor" string-cursor string-cursor-lerp="0.75">
     <figure class="image-1">
-      <img string="lazy" string-lazy="https://picsum.photos/555/600" alt="StringTune">
+      <img string="lazy" string-lazy="https://picsum.photos/555/600" alt="Merugu Dinesh Kumar">
     </figure>
     <figure class="image-2">
-      <img string="lazy" string-lazy="https://picsum.photos/787/544" alt="StringTune">
+      <img string="lazy" string-lazy="https://picsum.photos/787/544" alt="Merugu Dinesh Kumar">
     </figure>
     <figure class="image-3">
-      <img string="lazy" string-lazy="https://picsum.photos/712/536" alt="StringTune">
+      <img string="lazy" string-lazy="https://picsum.photos/712/536" alt="Merugu Dinesh Kumar">
     </figure>
     <figure class="image-4">
-      <img string="lazy" string-lazy="https://picsum.photos/783/501" alt="StringTune">
+      <img string="lazy" string-lazy="https://picsum.photos/783/501" alt="Merugu Dinesh Kumar">
     </figure>
   </div>
 

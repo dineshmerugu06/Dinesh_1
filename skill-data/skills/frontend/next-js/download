@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StringTune : Tutorial : StringTune</title>
+  <title>Merugu Dinesh Kumar : Skill : StringTune</title>
   <script src="https://unpkg.com/@fiddle-digital/string-tune@1.2.1/dist/index.js"></script>
   <style>
 @property --progress {
@@ -343,10 +343,10 @@ h6, .-h6 {
   <div class="-w">
   <span class="note -mm -up -tac">(Disabled on mobile devices by default)</span>
   <figure class="image-bg" string>
-    <img string="lazy" string-lazy="https://picsum.photos/752/409" alt="StringTune">
+    <img string="lazy" string-lazy="https://picsum.photos/752/409" alt="Merugu Dinesh Kumar">
   </figure>
   <figure class="image-1" string="parallax[]" string-parallax="0.75">
-    <img string="lazy" string-lazy="https://picsum.photos/715/463" alt="StringTune">
+    <img string="lazy" string-lazy="https://picsum.photos/715/463" alt="Merugu Dinesh Kumar">
   </figure>
   <h1 class="title line-1 -h0 -mid-h2 -m-h3" aria-hidden="true" string="parallax[]" string-parallax="-0.1">Thought</h1>
   <h1 class="title line-2 -h0 -mid-h2 -m-h3" aria-hidden="true" string="parallax[]" string-parallax="0.2">String</h1>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StringTune : Tutorial : StringTune</title>
+  <title>Merugu Dinesh Kumar : Skill : StringTune</title>
   <script src="https://unpkg.com/@fiddle-digital/string-tune@1.2.1/dist/index.js"></script>
   <style>
 @property --progress {
@@ -617,16 +617,16 @@ nav.arrows span {
   </nav>
   <div class="mini-sequence">
     <figure string="sequence" string-sequence-trigger="demo[0]">
-      <img string="lazy" string-lazy="https://picsum.photos/446/496" alt="StringTune">
+      <img string="lazy" string-lazy="https://picsum.photos/446/496" alt="Merugu Dinesh Kumar">
     </figure>
     <figure string="sequence" string-sequence-trigger="demo[1]">
-      <img string="lazy" string-lazy="https://picsum.photos/513/485" alt="StringTune">
+      <img string="lazy" string-lazy="https://picsum.photos/513/485" alt="Merugu Dinesh Kumar">
     </figure>
     <figure string="sequence" string-sequence-trigger="demo[2]">
-      <img string="lazy" string-lazy="https://picsum.photos/648/536" alt="StringTune">
+      <img string="lazy" string-lazy="https://picsum.photos/648/536" alt="Merugu Dinesh Kumar">
     </figure>
     <figure string="sequence" string-sequence-trigger="demo[3]">
-      <img string="lazy" string-lazy="https://picsum.photos/778/527" alt="StringTune">
+      <img string="lazy" string-lazy="https://picsum.photos/778/527" alt="Merugu Dinesh Kumar">
     </figure>
   </div>
 
@@ -643,16 +643,16 @@ nav.arrows span {
     string-active-step="demo[0]"
   >
     <figure string="sequence" string-sequence="demo[0]">
-      <img string="lazy" string-lazy="https://picsum.photos/647/507" alt="StringTune">
+      <img string="lazy" string-lazy="https://picsum.photos/647/507" alt="Merugu Dinesh Kumar">
     </figure>
     <figure string="sequence" string-sequence="demo[1]">
-      <img string="lazy" string-lazy="https://picsum.photos/576/414" alt="StringTune">
+      <img string="lazy" string-lazy="https://picsum.photos/576/414" alt="Merugu Dinesh Kumar">
     </figure>
     <figure string="sequence" string-sequence="demo[2]">
-      <img string="lazy" string-lazy="https://picsum.photos/577/577" alt="StringTune">
+      <img string="lazy" string-lazy="https://picsum.photos/577/577" alt="Merugu Dinesh Kumar">
     </figure>
     <figure string="sequence" string-sequence="demo[3]">
-      <img string="lazy" string-lazy="https://picsum.photos/583/530" alt="StringTune">
+      <img string="lazy" string-lazy="https://picsum.photos/583/530" alt="Merugu Dinesh Kumar">
     </figure>
   </div>
 

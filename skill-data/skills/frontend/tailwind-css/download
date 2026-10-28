@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StringTune : Tutorial : StringTune</title>
+  <title>Merugu Dinesh Kumar : Skill : StringTune</title>
   <script src="https://unpkg.com/@fiddle-digital/string-tune@1.2.1/dist/index.js"></script>
   <style>
 @property --progress {
@@ -352,19 +352,19 @@ h6, .-h6 {
   <p>Order is temporary — tension is permanent.</span>
 
   <figure class="image-1" string="glide[]" string-glide="1.0">
-    <img string="lazy" string-lazy="https://picsum.photos/664/558" alt="StringTune">
+    <img string="lazy" string-lazy="https://picsum.photos/664/558" alt="Merugu Dinesh Kumar">
   </figure>
   <figure class="image-2" string="glide[]" string-glide="0.5">
-    <img string="lazy" string-lazy="https://picsum.photos/592/470" alt="StringTune">
+    <img string="lazy" string-lazy="https://picsum.photos/592/470" alt="Merugu Dinesh Kumar">
   </figure>
   <figure class="image-3" string="glide[]" string-glide="0.0">
-    <img string="lazy" string-lazy="https://picsum.photos/737/493" alt="StringTune">
+    <img string="lazy" string-lazy="https://picsum.photos/737/493" alt="Merugu Dinesh Kumar">
   </figure>
   <figure class="image-4" string="glide[]" string-glide="0.5">
-    <img string="lazy" string-lazy="https://picsum.photos/771/402" alt="StringTune">
+    <img string="lazy" string-lazy="https://picsum.photos/771/402" alt="Merugu Dinesh Kumar">
   </figure>
   <figure class="image-5" string="glide[]" string-glide="1.0">
-    <img string="lazy" string-lazy="https://picsum.photos/507/575" alt="StringTune">
+    <img string="lazy" string-lazy="https://picsum.photos/507/575" alt="Merugu Dinesh Kumar">
   </figure>
 </div>
   <script>

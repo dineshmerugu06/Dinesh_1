@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StringTune : Tutorial : StringTune</title>
+  <title>Merugu Dinesh Kumar : Skill : StringTune</title>
   <script src="https://unpkg.com/@fiddle-digital/string-tune@1.2.1/dist/index.js"></script>
   <style>
 @property --progress {
@@ -344,13 +344,13 @@ figure {
 <body>
   <div class="-w">
   <figure class="image-1" string="magnetic" string-radius="800" string-strength="0.1">
-    <img string="lazy" string-lazy="https://picsum.photos/460/587" alt="StringTune">
+    <img string="lazy" string-lazy="https://picsum.photos/460/587" alt="Merugu Dinesh Kumar">
   </figure>
   <figure class="image-2" string="magnetic" string-radius="800" string-strength="0.1">
-    <img string="lazy" string-lazy="https://picsum.photos/483/574" alt="StringTune">
+    <img string="lazy" string-lazy="https://picsum.photos/483/574" alt="Merugu Dinesh Kumar">
   </figure>
   <figure class="image-3" string="magnetic" string-radius="800" string-strength="0.1">
-    <img string="lazy" string-lazy="https://picsum.photos/443/493" alt="StringTune">
+    <img string="lazy" string-lazy="https://picsum.photos/443/493" alt="Merugu Dinesh Kumar">
   </figure>
   <span class="note -mm -up -tac">(Disabled on mobile devices)</span>
 </div>
