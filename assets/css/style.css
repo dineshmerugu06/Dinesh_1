@@ -1,0 +1,76 @@
+/* Dinesh_1-clean: plain CSS, no framework, no external assets.
+   Each section below is independent: editing one section's rules
+   does not affect another section. */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  background: #111;
+  color: #f2f2f2;
+  line-height: 1.6;
+}
+a { color: #ffb300; }
+a:hover { text-decoration: underline; }
+
+/* Navigation (same on every page, links are relative) */
+.nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #333;
+  flex-wrap: wrap;
+}
+.nav .brand { font-weight: 700; color: #fff; text-decoration: none; margin-right: auto; }
+.nav a { color: #ddd; text-decoration: none; }
+.nav a:hover, .nav a.active { color: #ffb300; }
+
+/* Layout */
+main { max-width: 900px; margin: 0 auto; padding: 1rem 1.5rem 3rem; }
+section { padding: 2.5rem 0; border-bottom: 1px solid #2a2a2a; }
+section:last-child { border-bottom: none; }
+h1 { font-size: 2.2rem; line-height: 1.2; margin: 0 0 0.5rem; }
+h2 { font-size: 1.6rem; margin: 0 0 0.75rem; }
+h3 { margin: 0 0 0.25rem; }
+p { margin: 0.5rem 0; color: #ddd; }
+.tag { color: #ffb300; font-weight: 600; }
+.muted { color: #bbb; }
+
+/* Hero */
+.hero { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; }
+.hero-photo {
+  width: 200px; height: 200px; object-fit: cover;
+  border-radius: 12px; border: 2px solid #333; flex-shrink: 0;
+}
+.hero-text { flex: 1; min-width: 260px; }
+
+/* Cards (used in Strengths, Projects, Skills, Who I Build For) */
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin-top: 1rem; }
+.card { border: 1px solid #333; border-radius: 12px; padding: 1rem; background: #1a1a1a; }
+.card p { margin: 0.25rem 0 0; }
+
+/* Skill list */
+.skill-list { columns: 2; margin: 1rem 0; padding-left: 1.25rem; }
+.skill-list li { margin: 0.25rem 0; }
+
+/* Numbered points (Websites Built Right) */
+.points { padding-left: 1.25rem; }
+.points li { margin: 0.75rem 0; }
+
+/* Buttons / links */
+.button {
+  display: inline-block; margin-top: 1rem; padding: 0.6rem 1.2rem;
+  background: #ffb300; color: #111; text-decoration: none;
+  border-radius: 8px; font-weight: 700;
+}
+.button:hover { text-decoration: none; background: #ffc93c; }
+
+/* Footer */
+footer { border-top: 1px solid #333; padding: 1.5rem; text-align: center; color: #bbb; }
+footer a { color: #ddd; }
+
+@media (max-width: 600px) {
+  h1 { font-size: 1.7rem; }
+  .skill-list { columns: 1; }
+  .hero-photo { width: 150px; height: 150px; }
+}
