@@ -92,33 +92,42 @@ div.fixed.inset-0.z-99.bg-black{display:none!important}
 <div class="d1-steps"><div class="d1-step active" data-s="0">1</div><div class="d1-step" data-s="1">2</div></div>
 <button class="d1-close" aria-label="Close">&times;</button>
 <div class="d1-media">
-<div class="d1-pane active"><img src="/Dinesh_1/images/projects/sreeka-interiors.jpg" alt="Sreeka Interiors"></div>
-<div class="d1-pane"><video src="/Dinesh_1/videos/skill-demos/projects/05.mp4" controls playsinline preload="metadata" poster="/Dinesh_1/images/projects/sreeka-interiors.jpg"></video></div>
+<div class="d1-pane active"><img id="d1-img" src="" alt=""></div>
+<div class="d1-pane"><video id="d1-vid" src="" controls playsinline preload="metadata" poster=""></video></div>
 </div>
-<h2>Sreeka Interiors</h2>
-<p class="d1-desc">Interior design website for Sreeka Interiors, Hyderabad &mdash; explore kitchens, living spaces and wardrobes, built with their permission.</p>
-<a class="d1-visit" href="https://sreeka-interiors.vercel.app" target="_blank" rel="noopener">Visit Website <span>&rarr;</span></a>
+<h2 id="d1-title"></h2>
+<p class="d1-desc" id="d1-desc"></p>
+<a class="d1-visit" id="d1-visit" href="#" target="_blank" rel="noopener">Visit Website <span>&rarr;</span></a>
 </div>
 </div>
 <script>
+/* Dinesh_1 project data */
+var D1_PROJECTS={
+"sreeka-interiors":{title:"Sreeka Interiors",img:"/Dinesh_1/images/projects/sreeka-interiors.jpg",vid:"/Dinesh_1/videos/skill-demos/projects/05.mp4",desc:"Interior design website for Sreeka Interiors, Hyderabad \u2014 explore kitchens, living spaces and wardrobes, built with their permission.",url:"https://sreeka-interiors.vercel.app",ext:true},
+"imperium":{title:"IMPERIUM",img:"/Dinesh_1/images/projects/imperium.jpg",vid:"/Dinesh_1/videos/skill-demos/projects/01.mp4",desc:"A local, career-focused AI agent. Talk in plain words \u2014 it plans the work, delegates to specialist sub-agents, finds the right jobs, builds a tailored resume for each, and tracks every application. Your data never leaves your machine.",url:"/Dinesh_1/my-skills/projects/imperium/",ext:false},
+"keymind":{title:"KeyMind",img:"/Dinesh_1/images/projects/keymind.jpg",vid:"/Dinesh_1/videos/skill-demos/projects/02.mp4",desc:"Secure vault dashboard with an automation timeline \u2014 manage credentials and watch automations run.",url:"/Dinesh_1/my-skills/projects/keymind/",ext:false},
+"auction-space":{title:"Auction Space",img:"/Dinesh_1/images/projects/auction-space.jpg",vid:"/Dinesh_1/videos/skill-demos/projects/03.mp4",desc:"Live auction platform \u2014 browse auctions, bid on items, OTP-verified.",url:"/Dinesh_1/my-skills/projects/auction-space/",ext:false},
+"college-bus-tracking":{title:"College Bus Tracking",img:"/Dinesh_1/images/projects/college-bus-tracking.jpg",vid:"/Dinesh_1/videos/skill-demos/projects/04.mp4",desc:"Live bus tracking for college transport \u2014 route maps and bus details.",url:"/Dinesh_1/my-skills/projects/college-bus-tracking/",ext:false},
+"photography":{title:"Photography",img:"/Dinesh_1/images/projects/photography.jpg",vid:"/Dinesh_1/videos/skill-demos/projects/06.mp4",desc:"Photographer portfolio \u2014 \u2018Born to Capture\u2019, street to weddings.",url:null,ext:false}
+};
 /* Dinesh_1 project popup */
 (function(){
 if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",init)}else{init()}
 function init(){
 var pop=document.getElementById('d1-pop'),steps=pop.querySelectorAll('.d1-step'),panes=pop.querySelectorAll('.d1-pane'),timer=null,cur=0;
 function show(i){cur=i;steps.forEach(function(s,k){s.classList.toggle('active',k===i);s.classList.toggle('done',k<i);s.textContent=k<i?'\u2713':(k+1)});panes.forEach(function(p,k){p.classList.toggle('active',k===i)});var v=panes[i].querySelector('video');if(v&&i===1){v.play().catch(function(){})}panes.forEach(function(p,k){var vv=p.querySelector('video');if(vv&&k!==i)vv.pause()})}
-function open(){pop.classList.add('open');document.body.style.overflow='hidden';show(0);clearInterval(timer);timer=setInterval(function(){show((cur+1)%steps.length)},5000)}
+function open(slug){var d=D1_PROJECTS[slug]||D1_PROJECTS["sreeka-interiors"];document.getElementById('d1-img').src=d.img;document.getElementById('d1-img').alt=d.title;var v=document.getElementById('d1-vid');v.src=d.vid;v.poster=d.img;document.getElementById('d1-title').textContent=d.title;document.getElementById('d1-desc').textContent=d.desc;var vb=document.getElementById('d1-visit');if(d.url){vb.style.display='';vb.href=d.url;if(d.ext){vb.setAttribute('target','_blank')}else{vb.removeAttribute('target')}}else{vb.style.display='none'}pop.classList.add('open');document.body.style.overflow='hidden';show(0);clearInterval(timer);timer=setInterval(function(){show((cur+1)%steps.length)},5000)}
 function close(){pop.classList.remove('open');document.body.style.overflow='';clearInterval(timer);panes.forEach(function(p){var v=p.querySelector('video');if(v)v.pause()})}
-window.d1OpenProject=function(){open()};
+window.d1OpenProject=function(slug){open(slug||'sreeka-interiors')};
 steps.forEach(function(s){s.addEventListener('click',function(){clearInterval(timer);show(+s.dataset.s)})});
 pop.querySelector('.d1-close').addEventListener('click',close);
 pop.querySelector('.d1-backdrop').addEventListener('click',close);
 document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
 /* direct click capture (backup) */
-document.addEventListener('click',function(e){var el=e.target.closest&&e.target.closest('[data-id="sreeka-interiors"],a[href*="sreeka-interiors"]');if(el){e.preventDefault();e.stopPropagation();open()}},true);
+document.addEventListener('click',function(e){var el=e.target.closest&&e.target.closest('[data-id]');if(el&&D1_PROJECTS[el.getAttribute('data-id')]){e.preventDefault();e.stopPropagation();open(el.getAttribute('data-id'))}},true);
 /* intercept Sreeka card -> popup instead of navigation */
 var P='/Dinesh_1/projects/',origPush=history.pushState,origRep=history.replaceState;
-function route(u){if(typeof u==='string'&&u.indexOf(P)===0){var slug=u.slice(P.length).replace(/\/$/,'');if(slug==='sreeka-interiors'){open();return true}window.location.href=u;return true}return false}
+function route(u){if(typeof u==='string'&&u.indexOf(P)===0){var slug=u.slice(P.length).replace(/\/$/,'');if(D1_PROJECTS[slug]){open(slug);return true}window.location.href=u;return true}return false}
 history.pushState=function(s,t,u){if(route(u))return;return origPush.apply(this,arguments)};
 history.replaceState=function(s,t,u){if(route(u))return;return origRep.apply(this,arguments)};
 }
