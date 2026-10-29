@@ -71,19 +71,26 @@ function badge(el,text){if(!el||el.querySelector(":scope > .sec-num"))return;
 var b=document.createElement("div");b.className="sec-num";b.textContent=text;
 b.style.cssText="position:absolute;top:10px;left:10px;z-index:2000;background:#ff4a1c;color:#fff;font:700 13px/1.5 system-ui,sans-serif;padding:5px 12px;border-radius:6px;pointer-events:none;white-space:nowrap;";
 if(getComputedStyle(el).position==="static")el.style.position="relative";el.prepend(b);}
-function byText(root,txt){var els=root.querySelectorAll("span,div");for(var i=0;i<els.length;i++){if(els[i].textContent.trim()===txt)return els[i];}return null;}
-function label(){var M="main.page.home-page ";
+function label(){
+document.querySelectorAll('.sec-num').forEach(function(x){x.remove();});
+var M="main.page.home-page ";
 badge(document.querySelector(M+".c-welcome"),"Section 1: Welcome");
 badge(document.querySelector(M+".c-transition"),"Section 2: Transition");
 badge(document.querySelector(M+".c-storm"),"Section 3: Storm");
 var tree=document.querySelector(M+".c-tree");
-if(tree){badge(tree.querySelector(".back-fall"),"Section 4.1");badge(tree.querySelector(".composition"),"Section 4.2");}
+if(tree){badge(tree.querySelector(".back-fall"),"Section 4.1");badge(tree.querySelector(".composition"),"Section 4.2");badge(tree.querySelector(".bamboo"),"Section 4.3");}
 var tech=document.querySelector(M+".c-techniques");
 if(tech){badge(tech.querySelector(".master-the-sword"),"Section 5.1");
-var s2=byText(tech,"My Strengths");badge(s2?s2.closest("div")||s2:null,"Section 5.2");}
+var s2=null;var els=tech.querySelectorAll("span,div");for(var i=0;i<els.length;i++){if(els[i].textContent.trim()==="My Strengths"){s2=els[i];break;}}
+badge(s2?s2.closest("div")||s2:null,"Section 5.2");}
 badge(document.querySelector(M+".c-masonry"),"Section 6: Masonry");
-badge(document.querySelector(M+".c-for"),"Section 7: For");
-badge(document.querySelector(M+".c-clarity"),"Section 8: Clarity");}
+var forSec=document.querySelector(M+".c-for");
+if(forSec){badge(forSec.querySelector(".title"),"Section 7.1");badge(forSec.querySelector(".-gc"),"Section 7.2");}
+badge(document.querySelector(M+".c-clarity"),"Section 8: Clarity");
+badge(document.querySelector("footer .-w"),"Section 9");
+badge(document.querySelector("footer figure.kw"),"Section 10");
+badge(document.querySelector("footer .sub.-su-1"),"Section 11");
+}
 if(document.readyState==="complete")setTimeout(label,1200);
 document.addEventListener("DOMContentLoaded",function(){setTimeout(label,1200);setTimeout(label,4000);setTimeout(label,8000);});
 })();
