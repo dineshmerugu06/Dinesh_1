@@ -115,9 +115,9 @@ pop.querySelector('.d1-close').addEventListener('click',close);
 pop.querySelector('.d1-backdrop').addEventListener('click',close);
 document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
 /* direct click capture (backup) */
-document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="sreeka-interiors"]');if(a){e.preventDefault();e.stopPropagation();open()}},true);
+document.addEventListener('click',function(e){var el=e.target.closest&&e.target.closest('[data-id="sreeka-interiors"],a[href*="sreeka-interiors"]');if(el){e.preventDefault();e.stopPropagation();open()}},true);
 /* intercept Sreeka card -> popup instead of navigation */
-var P='/Dinesh_1/my-skills/projects/',origPush=history.pushState,origRep=history.replaceState;
+var P='/Dinesh_1/projects/',origPush=history.pushState,origRep=history.replaceState;
 function route(u){if(typeof u==='string'&&u.indexOf(P)===0){var slug=u.slice(P.length).replace(/\/$/,'');if(slug==='sreeka-interiors'){open();return true}window.location.href=u;return true}return false}
 history.pushState=function(s,t,u){if(route(u))return;return origPush.apply(this,arguments)};
 history.replaceState=function(s,t,u){if(route(u))return;return origRep.apply(this,arguments)};
