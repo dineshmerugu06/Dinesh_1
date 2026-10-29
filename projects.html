@@ -103,6 +103,8 @@ div.fixed.inset-0.z-99.bg-black{display:none!important}
 <script>
 /* Dinesh_1 project popup */
 (function(){
+if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",init)}else{init()}
+function init(){
 var pop=document.getElementById('d1-pop'),steps=pop.querySelectorAll('.d1-step'),panes=pop.querySelectorAll('.d1-pane'),timer=null,cur=0;
 function show(i){cur=i;steps.forEach(function(s,k){s.classList.toggle('active',k===i);s.classList.toggle('done',k<i);s.textContent=k<i?'\u2713':(k+1)});panes.forEach(function(p,k){p.classList.toggle('active',k===i)});var v=panes[i].querySelector('video');if(v&&i===1){v.play().catch(function(){})}panes.forEach(function(p,k){var vv=p.querySelector('video');if(vv&&k!==i)vv.pause()})}
 function open(){pop.classList.add('open');document.body.style.overflow='hidden';show(0);clearInterval(timer);timer=setInterval(function(){show((cur+1)%steps.length)},5000)}
@@ -119,6 +121,7 @@ var P='/Dinesh_1/my-skills/projects/',origPush=history.pushState,origRep=history
 function route(u){if(typeof u==='string'&&u.indexOf(P)===0){var slug=u.slice(P.length).replace(/\/$/,'');if(slug==='sreeka-interiors'){open();return true}window.location.href=u;return true}return false}
 history.pushState=function(s,t,u){if(route(u))return;return origPush.apply(this,arguments)};
 history.replaceState=function(s,t,u){if(route(u))return;return origRep.apply(this,arguments)};
+}
 })();
 </script>
 </body></html>
