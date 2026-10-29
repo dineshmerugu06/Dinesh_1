@@ -1,0 +1,23 @@
+# Dinesh Kumar
+
+> Personal portfolio of Merugu Dinesh Kumar, an MCA student and frontend developer.
+
+## About
+
+I build frontend websites and practical software projects. My interests include responsive web interfaces, JavaScript/TypeScript, React, Next.js, Python, automation, and AI-assisted development with human review.
+
+## Selected projects
+
+- [IMPERIUM](https://dineshmerugu06.github.io/Dinesh_1/my-skills/projects/imperium/): multi-agent AI project exploring task delegation and career-focused workflows.
+- [KeyMind](https://dineshmerugu06.github.io/Dinesh_1/my-skills/projects/keymind/): Python and Selenium password-update automation project.
+- [Auction Space](https://dineshmerugu06.github.io/Dinesh_1/my-skills/projects/auction-space/): web-based auction concept.
+- [College Bus Tracking](https://dineshmerugu06.github.io/Dinesh_1/my-skills/projects/college-bus-tracking/): college transport tracking concept.
+- [Sreeka Interiors](https://sreeka-interiors.vercel.app): interior design website.
+
+## Links
+
+- [Portfolio](https://dineshmerugu06.github.io/Dinesh_1/)
+- [Projects gallery](https://dineshmerugu06.github.io/Dinesh_1/projects.html)
+- [GitHub](https://github.com/dineshmerugu06)
+- [LinkedIn](https://www.linkedin.com/in/m-dinesh-23210b3a3)
+- Email: dinesh.merugu.kumar@gmail.com
