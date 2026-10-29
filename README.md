@@ -8,15 +8,15 @@ Repo: github.com/dineshmerugu06/Dinesh_1
 ## Pages — how this repo is arranged
 
 - Landing page: `index.html` — 3D home page. Code in `code/home.*`.
-- Projects page: `my-skills.html` — shown as "Projects" in the menu. File name stays `my-skills.html` because all detail pages link to it. Code in `code/my-skills.*`.
+- Projects page: `projects.html` — shown as "Projects" in the menu. Code in `code/my-skills.*` (code file name unchanged, internal only).
 - `404.html` — Fallback page for deep links (GitHub Pages serves this when a URL has no exact file)
 - `.nojekyll` — Tells GitHub Pages not to run Jekyll
 
-Dev Guides page is deleted. Start a Project links are removed. There is no separate My Skills page anymore — the Projects page holds the skills and projects lists.
+Dev Guides page is deleted. Start a Project links are removed. There is no separate My Skills page anymore — the Projects page holds the skills and projects lists. Projects links are plain links to `projects.html`, not app-router links, so clicking Projects opens the page directly with no landing-page flash and no refresh needed.
 
 ## Detail pages
 
-All under `my-skills/`, one folder per page, each with its own `index.html`:
+All under `my-skills/`, one folder per page, each with its own `index.html` (detail folder name unchanged, so detail page URLs stay working):
 
 - `my-skills/projects/` — Project details: IMPERIUM, KeyMind, Auction Space, College Bus Tracking
 - `my-skills/frontend/` — React, Next.js, TypeScript, JavaScript, Tailwind CSS, GSAP, Lenis, Three.js, Python, Java, SQL, FastAPI, Spring Boot, Node.js, PostgreSQL, Supabase
