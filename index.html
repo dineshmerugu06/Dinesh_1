@@ -116,9 +116,9 @@ function initBlackHole(canvas){
   var N=150;
   function resize(){
     var r=canvas.parentElement.getBoundingClientRect();
-    W=canvas.width=Math.max(1,Math.floor(r.width));
-    H=canvas.height=Math.max(1,Math.floor(r.height));
-    cx=W/2;cy=H/2;makeParts();
+    var w=Math.max(1,Math.floor(r.width)),h=Math.max(1,Math.floor(r.height));
+    if(w===W&&h===H)return;
+    W=canvas.width=w;H=canvas.height=h;cx=W/2;cy=H/2;makeParts();
   }
   function makeParts(){
     parts=[];
@@ -169,8 +169,10 @@ function initBlackHole(canvas){
     }
     if(!reduced)requestAnimationFrame(frame);
   }
-  resize();
+  requestAnimationFrame(function(){resize();});
+  if(window.ResizeObserver){try{new ResizeObserver(function(){resize();}).observe(canvas.parentElement);}catch(e){}}
   window.addEventListener('resize',resize);
+  setInterval(function(){resize();},1500);
   requestAnimationFrame(frame);
 }
 var applying=false;
